@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    background: rgba(226, 195, 250, 0.73);
+    font-size: 30px;
+    font-family: Arial;
+ }
+
+
+
+.header {
+    text-decoration: none;
+    min-height: 90px;
+    width: 100%;
+    background-color: #3b3b3b;
+    font-family: Arial;
+}
+
+/*Main menu*/
+
+.header > ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+
+head > ul li {
+    position: relative;
+}
+
+.header > ul li > a {
+    display: block;
+    padding: 15px 30px 15px 40px;
+
+    background-color: #3b3b3b;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid;
+    border-right-color: white;
+    transition: all 0.3s ease;
+
+}
+.header > ul li > a:first-child {
+    border-left: 2px;
+    border-left-color: white;
+
+}
+
+.header > ul li > a:hover {
+    background: #E2C3FA;
+    color: black;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
+.header li:hover > ul {
+    display: block;
+}
+
+
+/*Sub menu*/
+
+.header li ul {
+    position: absolute;
+    width: 250px;
+    display: none;
+}
+
+.header > ul li > ul li {
+    list-style: none;
+    border: 1px solid white;
+}
+
+/*Sub Sub Menu*/
+
+.header li ul >li ul {
+    position: absolute;
+    min-width: 300px;
+    right: -300px;
+    top: 130px;
+    display: none;
+}
+
+.header > ul li > ul li > ul li {
+    list-style: none;
+    border: 1px solid white;
+}
+/* Main content */
+
+.row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.row { display: inline-block; }
+* html .row { height: 1%; }
+.row { display: block; }
+
+.pics {
+    float: left;
+    width: 33%;
+}
+
+.info {
+    width: 34%;
+    float: left;
+}
+
+.etc {
+    width: 33%;
+    float: left;
+}
+
+.etc > img {
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+}
+
+/*Футер*/
+
+.footer {
+    border-top: 1px solid #3b3b3b;
+    text-align: right;
+    color: #3b3b3b;
+    font-family: Arial;
+    font-size: 20px;
+    height: 35px;
+}
+
+
+/*Второй файл*/
+
+.row > h2 {
+    padding: 15px 15px 15px 25px;
+}
+
+.text > p img {
+    width: 33%;
+    float: left;
+    margin: 0 10px 10px 20px;
+}
+
+.interests > ul {
+    list-style-position: inside;
+    text-align: center;
+}
+.interests > ul:first-child {
+
+    border-top: 1px solid black;
+    padding-bottom: 40px;
+
+}
+
+.name {
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.poem {
+    text-align: center;
+}
+
+.author {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.info{
+    font-size: 16px;
+}
+
+/* Медиазапрос */
+
+@media print {
+    .header {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .pics {
+        display: none;
+    }
+    .etc {
+        display: none;
+    }
+    .info {
+        display: block;
+    }
+
+}
