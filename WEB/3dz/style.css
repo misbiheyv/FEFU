@@ -1,0 +1,140 @@
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+header {
+    background: rgb(233, 225, 225);
+}
+
+.navbar-brand {
+    font-size: 40px;
+    padding: 0;
+}
+
+.cards {
+    padding: 0;
+}
+
+.card-body {
+    background: rgb(240, 238, 238);
+}
+
+.rating {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 90%;
+    padding: 8px;
+    border-left: none;
+    margin-left: 1px;
+    border-radius: 0 5px 5px 0;
+}
+
+.modal-body {
+    padding: 0px;
+    margin: 20px;
+}
+
+header ol li {
+    font-size: 20px
+}
+
+#other-page {
+    color: rgb(87, 140, 253);
+    text-decoration: none;
+}
+
+#current-page {
+    color: rgb(223, 223, 223)
+}
+
+.table td, .table th, .table thead th {
+    border: none;
+}
+
+.top1 {
+    background: #ffd9007c;
+}
+
+.top2 {
+    background: #c0c0c088;
+}
+
+.top3 {
+    background: #cd80327e;
+}
+
+.main-car {
+    overflow: hidden;
+}
+
+.main-car > img {
+    transition: all 5s ease-out;
+    -o-transition: all 5s ease-out;
+    -webkit-transition: all 5s ease-out;
+    cursor: pointer;
+}
+
+.main-car > img:hover {
+    transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+@media (max-width: 991px) {
+    .cards {
+        justify-content: space-around !important;
+    }
+    
+    .card {
+        margin-bottom: 2rem;
+    }
+}
+
+.profile-icon {
+    cursor: pointer;
+}
+
+#first-menu {
+    display: grid;
+    visibility: hidden;
+    top: 70%;
+    left: auto;
+    right: 24px;
+    transition: 1s;
+}
+
+#second-menu {
+    display: none;
+    width: 183px;
+}
+
+#second-menu:hover {
+    display: grid;   
+}
+
+#second-menu-btn {
+    outline: none;
+}
+
+#second-menu-btn:focus + #second-menu {
+    display: grid;
+}
+
+.profile-icon > i:hover #first-menu {
+    visibility: visible;
+    top: 77%;
+}
+
+.dropdown-menu {
+    background: rgb(250, 250, 250);
+}
+
+.dropdown-item {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.canvas {
+    height: 550px;
+}
+.otherProjectBtns > span{
+    visibility: hidden;
+}
